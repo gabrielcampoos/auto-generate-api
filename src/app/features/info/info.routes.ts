@@ -6,7 +6,7 @@ export default () => {
 
   router.post("/info", InfoController.infoCreate);
 
-  router.get("/info", InfoController.infoGet);
+  // router.get("/info", InfoController.infoGet);
 
   return router;
 };
