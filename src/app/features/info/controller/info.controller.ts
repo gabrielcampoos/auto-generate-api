@@ -27,20 +27,20 @@ export class InfoController {
     }
   }
 
-  static async infoGet(request: Request, response: Response) {
-    try {
-      const { id } = request.info;
+  // static async infoGet(request: Request, response: Response) {
+  //   try {
+  //     const { id } = request.info;
 
-      const usecase = new InfoGetUsecase();
+  //     const usecase = new InfoGetUsecase();
 
-      const result = await usecase.execute(id);
+  //     const result = await usecase.execute(id);
 
-      return httpHelper.success(response, result);
-    } catch (error: any) {
-      return httpHelper.badRequestError(
-        response,
-        Result.error(500, error.toString())
-      );
-    }
-  }
+  //     return httpHelper.success(response, result);
+  //   } catch (error: any) {
+  //     return httpHelper.badRequestError(
+  //       response,
+  //       Result.error(500, error.toString())
+  //     );
+  //   }
+  // }
 }
