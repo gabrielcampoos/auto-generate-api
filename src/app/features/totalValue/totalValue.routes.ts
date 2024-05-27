@@ -6,7 +6,7 @@ export default () => {
 
   router.post("/totalValue", TotalValueController.totalValueCreate);
 
-  router.get("/totalValue", TotalValueController.totalValueGet);
+  // router.get("/totalValue", TotalValueController.totalValueGet);
 
   return router;
 };

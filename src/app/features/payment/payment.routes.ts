@@ -6,7 +6,7 @@ export default () => {
 
   router.post("/payment", PaymentController.paymentCreate);
 
-  router.get("/payment", PaymentController.paymentGet);
+  // router.get("/payment", PaymentController.paymentGet);
 
   return router;
 };

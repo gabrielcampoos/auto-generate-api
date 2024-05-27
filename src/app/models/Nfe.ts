@@ -25,7 +25,7 @@ export interface NfeJson {
   valuePayment: string;
   maturityPayment: string;
   valueTotal: string;
-  createdAt: Date;
+  createdAt?: Date;
 }
 
 export class Nfe extends Base {
@@ -54,7 +54,7 @@ export class Nfe extends Base {
     private _valuePayment: string,
     private _maturityPayment: string,
     private _valueTotal: string,
-    _createdAt: Date
+    _createdAt?: Date
   ) {
     super(_id, _createdAt);
   }

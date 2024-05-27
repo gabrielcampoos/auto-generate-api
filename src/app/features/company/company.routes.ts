@@ -6,7 +6,7 @@ export default () => {
 
   router.post("/company", CompanyController.companyCreate);
 
-  router.get("/company", CompanyController.companyGet);
+  // router.get("/company", CompanyController.companyGet);
 
   return router;
 };
