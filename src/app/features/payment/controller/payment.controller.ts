@@ -26,20 +26,20 @@ export class PaymentController {
     }
   }
 
-  static async paymentGet(request: Request, response: Response) {
-    try {
-      const { id } = request.payment;
+  // static async paymentGet(request: Request, response: Response) {
+  //   try {
+  //     const { id } = request.payment;
 
-      const usecase = new PaymentGetUsecase();
+  //     const usecase = new PaymentGetUsecase();
 
-      const result = await usecase.execute(id);
+  //     const result = await usecase.execute(id);
 
-      return httpHelper.success(response, result);
-    } catch (error: any) {
-      return httpHelper.badRequestError(
-        response,
-        Result.error(500, error.toString())
-      );
-    }
-  }
+  //     return httpHelper.success(response, result);
+  //   } catch (error: any) {
+  //     return httpHelper.badRequestError(
+  //       response,
+  //       Result.error(500, error.toString())
+  //     );
+  //   }
+  // }
 }

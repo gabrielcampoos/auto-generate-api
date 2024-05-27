@@ -29,20 +29,20 @@ export class CompanyController {
     }
   }
 
-  static async companyGet(request: Request, response: Response) {
-    try {
-      const { id } = request.company;
+  // static async companyGet(request: Request, response: Response) {
+  //   try {
+  //     const { id } = request.company;
 
-      const usecase = new CompanyGetUsecase();
+  //     const usecase = new CompanyGetUsecase();
 
-      const result = await usecase.execute(id);
+  //     const result = await usecase.execute(id);
 
-      return httpHelper.success(response, result);
-    } catch (error: any) {
-      return httpHelper.badRequestError(
-        response,
-        Result.error(500, error.toString())
-      );
-    }
-  }
+  //     return httpHelper.success(response, result);
+  //   } catch (error: any) {
+  //     return httpHelper.badRequestError(
+  //       response,
+  //       Result.error(500, error.toString())
+  //     );
+  //   }
+  // }
 }

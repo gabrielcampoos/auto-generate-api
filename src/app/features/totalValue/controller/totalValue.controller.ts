@@ -24,20 +24,20 @@ export class TotalValueController {
     }
   }
 
-  static async totalValueGet(request: Request, response: Response) {
-    try {
-      const { id } = request.totalValue;
+  // static async totalValueGet(request: Request, response: Response) {
+  //   try {
+  //     const { id } = request.totalValue;
 
-      const usecase = new TotalValueGetUsecase();
+  //     const usecase = new TotalValueGetUsecase();
 
-      const result = await usecase.execute(id);
+  //     const result = await usecase.execute(id);
 
-      return httpHelper.success(response, result);
-    } catch (error: any) {
-      return httpHelper.badRequestError(
-        response,
-        Result.error(500, error.toString())
-      );
-    }
-  }
+  //     return httpHelper.success(response, result);
+  //   } catch (error: any) {
+  //     return httpHelper.badRequestError(
+  //       response,
+  //       Result.error(500, error.toString())
+  //     );
+  //   }
+  // }
 }
