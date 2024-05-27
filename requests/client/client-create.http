@@ -1,0 +1,29 @@
+
+POST http://localhost:8080/nfe HTTP/1.1
+content-type: application/json
+
+{
+    "nameClient": "string",
+    "cpfClient": "string",
+    "addressClient": "string",
+    "districtClient": "string",
+    "zipCodeClient": "string",
+    "ufClient": "string",
+    "cityClient": "string",
+    "municipalRegistrationClient": "string",
+    "phoneClient": "string",
+    "nameCompany": "string",
+    "socialReasonCompany": "string",
+    "addressCompany": "string",
+    "zipCodeCompany": "string",
+    "cnpjCompany": "string",
+    "numberCompany": "string",
+    "itemInfo": 0,
+    "textInfo": "string",
+    "addressInfo": "string",
+    "valueInfo": 0,
+    "formOfPaymentPayment": "string",
+    "valuePayment": "string",
+    "maturityPayment": "string",
+    "valueTotal": "string"
+}

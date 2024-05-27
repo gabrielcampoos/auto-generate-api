@@ -1,0 +1,12 @@
+
+POST http://localhost:8080/company HTTP/1.1
+content-type: application/json
+
+{
+  "name": "string",
+  "socialReason": "string",
+  "address": "string",
+  "zipCode": "string",
+  "cnpj": "string",
+  "number": "string"
+}
